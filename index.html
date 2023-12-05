@@ -13,7 +13,6 @@
 
             /* Estilos personalizados para los elementos de la barra de navegación */
             .navbar-nav .nav-item a.nav-link.active {
-                font-weight: bold;
                 font-size: larger;
             }
         </style>
@@ -40,8 +39,19 @@
         </nav>
         <div class="container">
             <div class="row">
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                    <button id="boton-pago" class="btn btn-success">Pagar</button>
+                </aside>
                 <!-- Cards videojuegos -->
-                <div class="container sm-8 row">
+                <div class="container sm-8 row" style="margin-top: 40px;">
                     <div class="row">
                         <!-- Card 1 -->
                         <div class="col-md-4">
@@ -157,17 +167,6 @@
                     </div>
                 </div>
 
-                <!-- Carrito -->
-                <aside class="col-sm-4">
-                    <h2>Carrito</h2>
-                    <!-- Elementos del carrito -->
-                    <ul id="carrito" class="list-group"></ul>
-                    <hr>
-                    <!-- Precio total -->
-                    <p class="text-right">Total: <span id="total"></span>&euro;</p>
-                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                    <button id="boton-pago" class="btn btn-success">Pagar</button>
-                </aside>
             </div>
         </div>
 
